@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Will You Be My Valentine? ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Container for dancing hearts -->
+  <div class="background-hearts"></div>
+  
+  <div class="container">
+    <h1>Will You Be My Valentine, Palak? ❤️</h1>
+    <!-- Cute Penguin GIF courtesy of Giphy: https://media.giphy.com/media/3o6Mbbs879ozZ9Yic0/giphy.gif -->
+    <img
+      src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3FuNTM2MGhxeG5weXh6Y3g4OGZ2OTMwczRwMDdmc3k0Mmhza3JvNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/b953PWjBug8u02dHot/giphy.gif"
+      alt="Cute Penguin"
+      class="penguin-gif"
+    />
+    <div class="buttons">
+      <button id="yes-btn">Yes 💖</button>
+      <button id="no-btn">No 😢</button>
+    </div>
+  </div>
+
+  <!-- Background music (ensure background.mp3 is in the same folder) -->
+  <audio id="background-music" loop>
+    <source src="background.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+  
+  <!-- Script to enable background music on first click -->
+  <script>
+    // Start audio on the first click to work around autoplay restrictions
+    function startAudio() {
+      var audio = document.getElementById("background-music");
+      audio.play().catch(function(error) {
+        console.log("Audio play error: ", error);
+      });
+      document.removeEventListener('click', startAudio);
+    }
+    document.addEventListener('click', startAudio);
+  </script>
+  
+  <!-- External script for buttons and hearts -->
+  <script src="script.js"></script>
+</body>
+</html>
