@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <h1>Yay! Best Valentine Ever! ❤️🥰</h1>
           <!-- Celebration Cute Penguin GIF courtesy of Giphy: https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGtyeHVmeXRlNTNwcmRrMHNld2xlNThianozNXVnd3BzdHo3cGFhNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wUe3S90MkV9e4MSAAg/giphy.gif -->
           <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGtyeHVmeXRlNTNwcmRrMHNld2xlNThianozNXVnd3BzdHo3cGFhNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wUe3S90MkV9e4MSAAg/giphy.gif" alt="Celebration Penguin" class="penguin-gif">
-          <h2>Love you, Palak! 😘</h2>
+          <h2>This means a lot🥰</h2>
         </div>`;
     });
   
